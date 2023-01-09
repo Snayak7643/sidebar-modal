@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { IoLogoDesignernews, IoIosList } from "react-icons/io";
+import { IoLogoDesignernews } from "react-icons/io";
 import { TiArrowBack } from "react-icons/ti";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const [show, setShow] = useState<boolean>(false);
@@ -12,8 +13,8 @@ const Navbar = () => {
 
   if (show === false) {
     return (
-      <button className="nav-toggle" onClick={handleClick}>
-        <IoIosList />
+      <button className="sidebar-toggle" onClick={handleClick}>
+        <FaBars />
       </button>
     );
   }
