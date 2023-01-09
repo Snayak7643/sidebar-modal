@@ -7,6 +7,7 @@ const Home = () => {
     <div className="center">
       <h2>Home</h2>
       <button
+        className="btn"
         onClick={() => {
           openModal("Tada!! It's Home Page");
         }}

@@ -49,17 +49,26 @@ const Navbar = () => {
 
         <ul className="social-icons">
           <li>
-            <a href="https://www.google.com" onClick={handleClick}>
+            <a
+              href="https://tourmaline-clafoutis-6c358a.netlify.app/"
+              onClick={handleClick}
+            >
               Fb
             </a>
           </li>
           <li>
-            <a href="https://www.google.com" onClick={handleClick}>
+            <a
+              href="https://darknight-tours.netlify.app/"
+              onClick={handleClick}
+            >
               Insta
             </a>
           </li>
           <li>
-            <a href="https://www.google.com" onClick={handleClick}>
+            <a
+              href="https://stunning-khapse-5b46bf.netlify.app/"
+              onClick={handleClick}
+            >
               Twitter
             </a>
           </li>

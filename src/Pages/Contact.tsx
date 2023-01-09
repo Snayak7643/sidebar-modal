@@ -8,6 +8,7 @@ const Contact = () => {
     <div className="center">
       <h2>Contact</h2>
       <button
+        className="btn"
         onClick={() => {
           openModal("Tada!! It's Contact Page");
         }}
