@@ -143,7 +143,8 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 30%;
+  overflow-x: hidden;
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
@@ -203,12 +204,8 @@ nav {
   color: var(--clr-primary-7);
 }
 
-.show-container {
-  height: 10rem;
-}
 @media screen and (min-width: 800px) {
   nav {
-    width: 15rem;
     height: 100vh;
   }
 }
