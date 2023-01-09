@@ -1,15 +1,17 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import { IoIosList } from "react-icons/io";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h2>Home</h2>} />
-        <Route path="/about" element={<h2>About</h2>} />
-        <Route path="/contact" element={<h2>Contact</h2>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Navbar />
     </BrowserRouter>
