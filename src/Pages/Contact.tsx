@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ModalContext } from "../App";
 
 const Contact = () => {
-  return <h2 className="center">Contact</h2>;
+  const { openModal } = useContext(ModalContext);
+
+  return (
+    <div className="center">
+      <h2>Contact</h2>
+      <button
+        onClick={() => {
+          openModal("Tada!! It's Contact Page");
+        }}
+      >
+        Click
+      </button>
+    </div>
+  );
 };
 
 export default Contact;

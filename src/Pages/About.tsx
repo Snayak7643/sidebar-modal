@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ModalContext } from "../App";
 
 const About = () => {
-  return <h2 className="center">About</h2>;
+  const { openModal } = useContext(ModalContext);
+
+  return (
+    <div className="center">
+      <h2>About</h2>
+      <button
+        onClick={() => {
+          openModal("Tada!! It's About Page");
+        }}
+      >
+        Click
+      </button>
+    </div>
+  );
 };
 
 export default About;
