@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
@@ -6,19 +6,13 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Modal from "./Components/Modal";
 import { ModalContext } from "./Contexts/ModalContext";
+import useModal from "./Hooks/useModal";
 
 function App() {
-  const [open, setOpen] = useState<string>("");
+  const value = useModal();
 
-  const openModal = (name: string) => {
-    setOpen(name);
-  };
-
-  const closeModal = () => {
-    setOpen("");
-  };
   return (
-    <ModalContext.Provider value={{ open, openModal, closeModal }}>
+    <ModalContext.Provider value={value}>
       <BrowserRouter>
         <Navbar />
         <Routes>

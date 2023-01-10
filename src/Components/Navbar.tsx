@@ -8,7 +8,7 @@ const Navbar = () => {
   const [show, setShow] = useState<boolean>(false);
 
   const handleClick = () => {
-    setShow(!show);
+    setShow((prevState) => !prevState);
   };
 
   if (show === false) {
