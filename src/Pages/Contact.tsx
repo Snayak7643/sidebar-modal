@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ModalContext } from "../App";
+import { ModalContext } from "../Contexts/ModalContext";
 
 const Contact = () => {
   const { openModal } = useContext(ModalContext);
